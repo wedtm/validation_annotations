@@ -6,7 +6,7 @@ Experemental ruby gem for adding html5 attribute annotations to input fields bas
 
 Add this line to your application's Gemfile:
 
-    gem 'validation_annotations', github: 'andyalm/validation_annotations'
+    gem 'validation_annotations'
 
 And then execute:
 
@@ -21,7 +21,7 @@ Or install it yourself as:
 Out of the box, by adding the following to your model (using ActiveModel::Validations):
 
     class Product < ActiveRecord::Base
-      validates_presence_of :title, :price
+      validates_presence_of :title
     end
 
 When you use a form_helper method in your view like this:
