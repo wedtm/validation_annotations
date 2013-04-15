@@ -4,7 +4,6 @@ module ValidationAnnotations
   class FormBuilder < ActionView::Helpers::FormBuilder
 
     def initialize(object_name, object, template, options, proc)
-      puts options.inspect
       @skip_annotations = !options[:validation_annotations].nil? && options[:validation_annotations] === false
       super(object_name, object, template, options, proc)
     end
