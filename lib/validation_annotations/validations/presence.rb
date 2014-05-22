@@ -9,7 +9,7 @@ module ValidationAnnotations
 end
 
 module ActiveModel
-  module Validations
+  module Valdiators
     class PresenceValidator
       include ValidationAnnotations::Validations::Presence
     end
