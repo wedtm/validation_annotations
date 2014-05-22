@@ -2,7 +2,7 @@
 require File.expand_path('../lib/validation_annotations/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Getty Images", "Andy Alm"]
+  gem.authors       = ["Getty Images", "Andy Alm", "Miles Smith"]
   gem.email         = ["opensourcereview@gettyimages.com"]
   gem.description   = %q{Provides an extensible hook for adding custom html attributes to input elements based on validation rules defined in your model.}
   gem.summary       = gem.description
@@ -15,6 +15,6 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = ValidationAnnotations::VERSION
 
-  gem.add_dependency 'activemodel', '~> 3.2'
-  gem.add_dependency 'actionpack', '~> 3.2'
+  gem.add_dependency 'activemodel', '~> 4.1'
+  gem.add_dependency 'actionpack', '~> 4.1'
 end
